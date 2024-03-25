@@ -76,7 +76,7 @@ export default function CreateAccountForm() {
 
 function LoginButton() {
   return (
-    <Button className="mt-4 w-full" onClick="handleCreate()">
+    <Button className="mt-4 w-full">
       Submit <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50"/>
     </Button>
   );
