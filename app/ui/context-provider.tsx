@@ -1,4 +1,4 @@
-'use client';
+/*'use client';
  
 import { createContext, useState } from 'react';
   
@@ -10,4 +10,4 @@ export default function ContextProvider({
    const UserContext = createContext({});
    const [user, setUser] = useState(null);
   return <ContextProvider.Provider value={{ user, setUser }}>{children}</ContextProvider.Provider>
-}
+}*/
