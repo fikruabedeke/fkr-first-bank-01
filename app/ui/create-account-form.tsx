@@ -13,7 +13,7 @@ export default function CreateAccountForm() {
       const [name, setName]         = useState('');
       const [email, setEmail]       = useState('');
       const [password, setPassword] = useState('');
-      const ctx = useContext(UserContext);  
+      //const ctx = useContext(UserContext);  
 
   function validate(field, label){
       if (!field) {
@@ -29,7 +29,7 @@ export default function CreateAccountForm() {
     if (!validate(name,     'name'))     return;
     if (!validate(email,    'email'))    return;
     if (!validate(password, 'password')) return;
-    ctx.users.push({name,email,password,balance:100});
+    //ctx.users.push({name,email,password,balance:100});
     setShow(false);
   }    
 
