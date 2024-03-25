@@ -7,39 +7,6 @@ import { Button } from './button';
 import { useContext,useState } from 'react';
 
 export default function CreateAccountForm() {
-  function CreateAccount(){
-      const [show, setShow]         = useState(true);
-      const [status, setStatus]     = useState('');
-      const [name, setName]         = useState('');
-      const [email, setEmail]       = useState('');
-      const [password, setPassword] = useState('');
-      //const ctx = useContext(UserContext);  
-
-  function validate(field, label){
-      if (!field) {
-        setStatus('Error: ' + label);
-        setTimeout(() => setStatus(''),3000);
-        return false;
-      }
-      return true;
-  }
-
-  function handleCreate(){
-    console.log(name,email,password);
-    if (!validate(name,     'name'))     return;
-    if (!validate(email,    'email'))    return;
-    if (!validate(password, 'password')) return;
-    //ctx.users.push({name,email,password,balance:100});
-    setShow(false);
-  }    
-
-  function clearForm(){
-    setName('');
-    setEmail('');
-    setPassword('');
-    setShow(true);
-  }
- }
   return (
     <form className="space-y-3">
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
